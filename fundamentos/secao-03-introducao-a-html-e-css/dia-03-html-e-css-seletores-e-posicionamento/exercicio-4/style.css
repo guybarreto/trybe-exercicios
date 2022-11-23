@@ -47,6 +47,10 @@ div:nth-of-type(5) > h3 {
     font-family: sans-serif;
 }
 
+/* 5. Deixe as tags ímpares h3 com o texto em itálico. */
+div:nth-child(odd) h3 {
+    font-style: italic;
+}
 
 /* Exercício 04:
 
