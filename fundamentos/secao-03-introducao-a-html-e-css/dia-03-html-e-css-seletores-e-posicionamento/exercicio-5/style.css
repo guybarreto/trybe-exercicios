@@ -21,7 +21,14 @@ ol.ol-style li:nth-child(odd) {
     border: 1px solid black;
 }
 
+/* 3. Faça todas as li’s terem 20px de tamanho de fonte e, para todo texto em itálico dentro de alguma li, utilize a propriedade font-weight para deixá-lo negrito. */
+li {
+    font-size: 20px;
+}
 
+li em {
+    font-weight: bold;
+}
 
 /* Exercício 05:
 1. Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. Se a numeração do item for PAR, faça a cor de fonte ser verde. Se o número for considerado ÍMPAR, utilize a propriedade text-transform para deixar o texto maiúsculo. (Dica: combinar classes pode ser útil aqui).
