@@ -8,9 +8,10 @@ li:hover {
     background-color: lightgreen;
 }
 
-
-
-
+/* 3.3 Adicione os estilos para que a fonte do item mude quando ele for clicado */
+li:active {
+    font-family: sans-serif;
+}
 
 
 /* Exercício 03 (continuação):
@@ -20,5 +21,3 @@ li:hover {
     - A cor de fundo da sua lista mude quando o cursor estiver sobre o item.
     - A fonte do item mude quando ele for clicado.
 */
-
-
