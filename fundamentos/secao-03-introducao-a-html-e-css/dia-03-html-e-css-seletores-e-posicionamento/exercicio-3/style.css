@@ -3,14 +3,10 @@ h1, p {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
+/* 3.2 Adicione os estilos para que a cor de fundo da sua lista mude quando o cursor estiver sobre o item */
+li:hover {
+    background-color: lightgreen;
+}
 
 
 
