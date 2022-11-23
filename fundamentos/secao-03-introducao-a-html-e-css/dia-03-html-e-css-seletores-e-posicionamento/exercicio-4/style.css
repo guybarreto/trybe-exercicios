@@ -3,6 +3,7 @@ div:hover {
     border: solid black;
 }
 
+/* 2. Faça cada div ter uma cor própria */
 div:nth-of-type(1) {
     background-color: #e63946;
 }
@@ -13,17 +14,38 @@ div:nth-of-type(2) {
 
 div:nth-of-type(3) {
     background-color: #457b9d;
+/* 4. Faça a terceira div ser maior que as demais */
+    font-size: 22px;
 }
 
 div:nth-of-type(4) {
     background-color: #1d3557;
-    color: white;
 }
 
 div:nth-of-type(5) {
     background-color: #a8dadc;
 }
 
+/* 3. Estilize cada uma das tags h3 */
+div:nth-of-type(1) > h3 {
+    text-decoration: underline;
+}
+
+div:nth-of-type(2) > h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div:nth-of-type(3) > h3 {
+    color: white;
+}
+
+div:nth-of-type(4) > h3 {
+    color: aqua;
+}
+
+div:nth-of-type(5) > h3 {
+    font-family: sans-serif;
+}
 
 
 /* Exercício 04:
