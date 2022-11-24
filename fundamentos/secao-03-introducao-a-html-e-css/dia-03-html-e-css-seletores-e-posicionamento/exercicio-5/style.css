@@ -1,13 +1,13 @@
 /* 1. Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. Se a numeração do item for PAR, faça a cor de fonte ser verde. Se o número for considerado ÍMPAR, utilize a propriedade text-transform para deixar o texto maiúsculo. (Dica: combinar classes pode ser útil aqui). */
-ol.ol-style li {
+ol.quotes li {
     background-color: yellow;
 }
 
-ol.ol-style li:nth-child(even) {
+ol.quotes li:nth-child(even) {
     color: green;
 }
 
-ol.ol-style li:nth-child(odd) {
+ol.quotes li:nth-child(odd) {
     text-transform: uppercase;
 }
 
@@ -31,17 +31,48 @@ li em {
 }
 
 /* 4. Na listagem de linguagens de programação, faça com que as 3 primeiras da lista possuam cor de fonte azul e, se alguma possuir “java*” no texto, utilize uma cor de fundo rosa. */
-.ul-style li:nth-child(-n+3) {
+.languages li:nth-child(-n+3) {
     color: blue;
 }
 
-.ul-style:first-of-type li:nth-child(n+2):nth-child(-n+3) {
+.languages:first-of-type li:nth-child(n+2):nth-child(-n+3) {
     background-color: pink;
 }
 
+/* (Bônus) Para cada link na lista de aliados da pessoa desenvolvedora, faça com que ao passar o mouse sobre cada um, o texto fique em negrito e assuma a cor de fonte “temática do site” */
+
+.allies a {
+    text-decoration: none;
+    color: black;
+}
+
+.allies a:hover {
+    font-weight: bold;
+}
+
+.allies a[href*="stackoverflow"]:hover {
+    color: orange;
+}
+
+.allies a[href*="w3schools"]:hover {
+    color: green;
+}
+
+.allies a[href*="mozilla"]:hover {
+    color: black;
+}
+
+.allies a[href*="devdocs"]:hover {
+    color: rgb(198, 198, 80);
+}
+
+.allies a[href*="trybe"]:hover {
+    color: rgb(0, 255, 0);
+}
 
 
 /* Exercício 05:
+
 1. Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. Se a numeração do item for PAR, faça a cor de fonte ser verde. Se o número for considerado ÍMPAR, utilize a propriedade text-transform para deixar o texto maiúsculo. (Dica: combinar classes pode ser útil aqui).
 
 2. Faça todas as tags Header (h1, h2…) possuírem cor de fonte vermelha e, se alguma delas estiver em itálico, aumente seu tamanho para 40px e acrescente uma borda de 1px preta e sólida.
