@@ -7,6 +7,3 @@ table, th, td {
     border-collapse: collapse;
   }
 
-  table th {
-    column-span: all;
-  }
