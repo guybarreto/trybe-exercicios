@@ -17,16 +17,16 @@ img {
   margin: auto;
 }
 
+table, th, td {
+  margin: auto;
+  width: 350px;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
 h2,h3, nav ul {
   background-color: cornflowerblue;
   padding-left: 10px;
-}
-
-table,
-th,
-td {
-  border: 1px solid;
-  border-collapse: collapse;
 }
 
 a {
