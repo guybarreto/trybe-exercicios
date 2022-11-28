@@ -12,6 +12,14 @@ header, h1 {
   margin-bottom: 40px;
 }
 
+p {
+  text-indent: 50px;
+}
+
+h3 {
+  margin-top: 50px;
+}
+
 img {
   display: block;
   margin: auto;
