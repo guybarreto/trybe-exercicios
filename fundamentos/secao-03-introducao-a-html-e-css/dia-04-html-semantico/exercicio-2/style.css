@@ -32,6 +32,11 @@ table, th, td {
   border-collapse: collapse;
 }
 
+#capCap {
+  font-style: italic;
+  font-size: 40px;
+}
+
 h2,h3, nav ul {
   background-color: cornflowerblue;
   padding-left: 10px;
