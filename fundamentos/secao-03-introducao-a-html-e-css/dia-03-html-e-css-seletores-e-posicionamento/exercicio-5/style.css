@@ -35,7 +35,7 @@ li em {
     color: blue;
 }
 
-.languages:first-of-type li:nth-child(n+2):nth-child(-n+3) {
+.pink-bg {
     background-color: pink;
 }
 
