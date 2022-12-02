@@ -6,7 +6,8 @@ body {
   display: block;
 }
 
-header, h1 {
+header,
+h1 {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 40px;
@@ -25,19 +26,18 @@ img {
   margin: auto;
 }
 
-table, th, td {
+table,
+th,
+td {
   margin: auto;
   width: 350px;
   border: 1px solid;
   border-collapse: collapse;
 }
 
-#capCap {
-  font-style: italic;
-  font-size: 40px;
-}
-
-h2,h3, nav ul {
+h2,
+h3,
+nav ul {
   background-color: cornflowerblue;
   padding-left: 10px;
 }
