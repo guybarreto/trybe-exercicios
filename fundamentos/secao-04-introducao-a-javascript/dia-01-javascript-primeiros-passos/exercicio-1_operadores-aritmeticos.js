@@ -3,17 +3,17 @@ const a = 10;
 const b = 5;
 
 // Escreva códigos para:
-// Adição (a + b)
+// 2. Adição (a + b)
 
 
-// Subtração (a - b)
+// 3. Subtração (a - b)
 
 
-// Multiplicação (a * b)
+// 4. Multiplicação (a * b)
 
 
-// Divisão (a / b)
+// 5. Divisão (a / b)
 
 
-// Módulo (a % b)
+// 6. Módulo (a % b)
 
