@@ -4,7 +4,7 @@ const b = 5;
 
 // Escreva códigos para:
 // 2. Adição (a + b)
-
+console.log("Adição: " + (a + b));
 
 // 3. Subtração (a - b)
 
