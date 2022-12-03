@@ -8,5 +8,5 @@ if (n1 > n2) {
 } else if (n2 > n1) {
     console.log("n2 (" + n2 + ") é maior do que n1 (" + n1 + ")");
 } else {
-    console.log("n1 (" + n1 + ") e n2 (" + n2 + ") são iguais");
+    console.log("n1 e n2 possuem o mesmo valor: " + n2);
 }
