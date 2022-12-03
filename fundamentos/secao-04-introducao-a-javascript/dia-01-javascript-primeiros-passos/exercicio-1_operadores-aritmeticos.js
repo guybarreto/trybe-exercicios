@@ -7,7 +7,7 @@ const b = 5;
 console.log("Adição: " + (a + b));
 
 // 3. Subtração (a - b)
-
+console.log("Subtração: " + (a - b));
 
 // 4. Multiplicação (a * b)
 
