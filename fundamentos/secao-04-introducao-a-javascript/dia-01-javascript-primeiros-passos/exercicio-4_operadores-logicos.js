@@ -28,6 +28,7 @@ if (currentHour >= 22) {
 console.log(message);
 
 // 5. Crie uma variável chamada “weekDay” que receba a string “quarta-feira”.
+let weekDay = "quarta-feira";
 
 // 6. Utilizando if/else, implemente condicionais para que:
 //      * Se nossa variável “weekDay” for “segunda-feira”, “terça-feira”, “quarta-feira”, “quinta-feira” ou “sexta-feira”, imprima “Oba, mais um dia de aprendizado na Trybe >:D”.
