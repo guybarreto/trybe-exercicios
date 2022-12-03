@@ -25,3 +25,4 @@ if (currentHour >= 22) {
 }
 
 // 4. Agora imprima a variável message fora das suas condições.
+console.log(message);
