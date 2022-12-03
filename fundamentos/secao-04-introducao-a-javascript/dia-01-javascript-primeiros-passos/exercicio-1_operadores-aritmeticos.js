@@ -16,4 +16,4 @@ console.log("Multiplicação: " + (a * b));
 console.log("Divisão: " + (a / b));
 
 // 6. Módulo (a % b)
-
+console.log("Módulo: " + (a % b));
