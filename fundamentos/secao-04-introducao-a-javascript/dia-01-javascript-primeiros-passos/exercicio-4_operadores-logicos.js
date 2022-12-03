@@ -1,6 +1,7 @@
 // Exercício 04:
 
 // 1. Crie uma constante chamada “currentHour”, que receba um número entre 4 e 24 de sua escolha, para representar as horas do dia.
+const currentHour = 19;
 
 // 2. Crie uma variável chamada “message” que, inicialmente, é uma string vazia.
 
