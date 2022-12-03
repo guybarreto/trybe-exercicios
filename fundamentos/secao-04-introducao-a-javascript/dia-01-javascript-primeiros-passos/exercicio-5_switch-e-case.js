@@ -1,6 +1,7 @@
 // Exercício 05:
 
 // 01. Crie uma variável para armazenar o status da pessoa candidata no processo seletivo, que pode ser: 'aprovada', 'lista' ou 'reprovada';
+let status = "aprovada";
 
 // 02. Crie uma estrutura condicional com o switch/case que irá imprimir as seguintes mensagens:
 //      * Caso 'aprovada', imprima “Parabéns, você foi aprovada(o)!”.
