@@ -13,7 +13,7 @@ console.log("Subtração: " + (a - b));
 console.log("Multiplicação: " + (a * b));
 
 // 5. Divisão (a / b)
-
+console.log("Divisão: " + (a / b));
 
 // 6. Módulo (a % b)
 
