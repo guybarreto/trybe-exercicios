@@ -10,7 +10,7 @@ console.log("Adição: " + (a + b));
 console.log("Subtração: " + (a - b));
 
 // 4. Multiplicação (a * b)
-
+console.log("Multiplicação: " + (a * b));
 
 // 5. Divisão (a / b)
 
