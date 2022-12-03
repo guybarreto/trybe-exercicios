@@ -4,6 +4,7 @@
 const currentHour = 19;
 
 // 2. Crie uma variável chamada “message” que, inicialmente, é uma string vazia.
+let message = "";
 
 // 3. Implemente condicionais para que:
 //      * Se o horário for maior ou igual a 22, insira “Não deveríamos comer nada, é hora de dormir” na variável “message”.
