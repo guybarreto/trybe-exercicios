@@ -5,5 +5,12 @@ const score = 90;
 
 // 2. Implemente uma lógica que verifique se a pessoa candidata foi aprovada, reprovada ou se essa pessoa está na lista de espera. Para isso, considere as seguintes informações:
 //      * Se a nota for maior ou igual a 80, imprima “Parabéns, você faz parte do grupo das pessoas aprovadas!”
-//      * Se a nota for menor que 80 e maior ou igual a 60, imprima “Você está na nossa lista de espera”
+//      * Se a nota for menor que 80 e maior ou igual a 60, imprima “Você está na nossa lista de espera.”
 //      * Se a nota for menor que 60, imprima “Infelizmente, você reprovou.”
+if (score >= 80) {
+    console.log("Parabéns, você faz parte do grupo das pessoas aprovadas!");
+} else if (score < 80 && score >= 60) {
+    console.log("Você está na nossa lista de espera.");
+} else {
+    console.log("Infelizmente, você reprovou.");
+}
