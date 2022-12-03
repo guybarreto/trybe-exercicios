@@ -18,3 +18,5 @@ birthYear = 2030;
 console.log(birthYear);
 
 // 6. Altere o valor atribuído à constante birthCity. Faça um console.log(birthCity) novamente! Você saberia explicar por que recebemos uma mensagem de erro? 🤔
+birthCity = "Gramado"; // A mensagem de erro acontece porque não é possível reatribuir valores a constantes.
+console.log(birthCity);
