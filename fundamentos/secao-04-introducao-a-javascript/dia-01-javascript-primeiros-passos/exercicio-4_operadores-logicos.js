@@ -26,3 +26,9 @@ if (currentHour >= 22) {
 
 // 4. Agora imprima a variável message fora das suas condições.
 console.log(message);
+
+// 5. Crie uma variável chamada “weekDay” que receba a string “quarta-feira”.
+
+// 6. Utilizando if/else, implemente condicionais para que:
+//      * Se nossa variável “weekDay” for “segunda-feira”, “terça-feira”, “quarta-feira”, “quinta-feira” ou “sexta-feira”, imprima “Oba, mais um dia de aprendizado na Trybe >:D”.
+//      * Se for algum dia de fim de semana, imprima “FINALMENTE, descanso merecido UwU”.
