@@ -3,7 +3,7 @@
 // 1. Obtenha o valor “Serviços” do array menu:
 
 let menu1 = ['Home', 'Serviços', 'Portfólio', 'Links'];
-let menuServices = ;
+let menuServices = menu1[1];
 
 console.log(menuServices);
 
