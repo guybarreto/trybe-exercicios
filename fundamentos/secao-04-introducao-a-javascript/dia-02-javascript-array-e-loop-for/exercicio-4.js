@@ -8,4 +8,9 @@ for (let index = 0; index < numbers.length; index++) {
 }
 
 const average = sum / numbers.length;
-console.log('Average: ' + average);
+
+if (average > 20) {
+    console.log('Average: ' + average.toFixed(2) + ", valor maior que 20");
+} else {
+    console.log('Average: ' + average.toFixed(2) + ", valor menor ou igual a 20");
+}
