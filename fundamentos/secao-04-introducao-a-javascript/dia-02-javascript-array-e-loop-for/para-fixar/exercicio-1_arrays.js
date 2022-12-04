@@ -10,7 +10,7 @@ console.log(menuServices);
 // 2. Procure o índice do valor “Portfólio” do array menu:
 
 let menu2 = ['Home', 'Serviços', 'Portfólio', 'Links'];
-let indexOfPortfolio = ;
+let indexOfPortfolio = menu2.indexOf('Portfólio');
 
 console.log(indexOfPortfolio);
 
