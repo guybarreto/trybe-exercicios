@@ -17,5 +17,6 @@ console.log(indexOfPortfolio);
 // 3. Adicione o valor “Contato” no final do array menu:
 
 let menu3 = ['Home', 'Serviços', 'Portfólio', 'Links'];
+menu3.push('Contato');
 
-console.log(menu);
+console.log(menu3);
