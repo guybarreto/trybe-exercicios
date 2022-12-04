@@ -5,6 +5,7 @@
 const n1 = 7;
 const n2 = 1;
 const n3 = 4;
+
 let thereIsEven = false;
 
 if (n1 % 2 === 0 || n2 % 2 === 0 || n3 % 2 === 0) {
