@@ -6,7 +6,7 @@
 //  ***
 // *****
 
-const n = 13;
+const n = 15;
 let numberOfLines;
 let array = [];
 
