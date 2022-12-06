@@ -9,3 +9,14 @@
 // *****
 // *****
 
+const n = 5;
+let array = [];
+
+
+for (let index = 0; index < n; index += 1) {
+    array.push('*');
+}
+
+for (let index = 0; index < n; index += 1) {
+    console.log(array.join(''));
+}
