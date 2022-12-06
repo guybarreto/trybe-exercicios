@@ -8,7 +8,7 @@
 //  ****
 // *****
 
-const n = 12;
+const n = 5;
 let array = [];
 
 for (let index = 0; index < n; index += 1) {
