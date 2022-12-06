@@ -7,3 +7,12 @@
 //   ***
 //  ****
 // *****
+
+const n = 12;
+let array = [];
+
+for (let index = 0; index < n; index += 1) {
+    array[n - index] = '*';
+    array.fill(' ', 0, n - index);
+    console.log(array.join(''));
+}
