@@ -89,3 +89,18 @@ return contNumero;
 }
 console.log(maisRepetidos(someArray4)); // returns 2
 
+// 6. Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+// Valor de teste: N = 5.
+// Valor esperado no retorno da função: 1+2+3+4+5 = 15.
+
+const someNumber = 5;
+
+const factorial = (number) => {
+    let sum = 0;
+    for (let index = number; index >=1; index -= 1) {
+            sum = sum + index;
+    }
+    return sum;
+}
+console.log(factorial(someNumber)); // results 15
+
