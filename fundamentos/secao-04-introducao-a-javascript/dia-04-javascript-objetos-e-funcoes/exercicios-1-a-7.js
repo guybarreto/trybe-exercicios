@@ -58,3 +58,34 @@ const biggestName = (array) => {
     return biggest;
 }
 console.log(biggestName(someArray3)); // Fernanda
+
+// 5. Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+// Array de teste: [2, 3, 2, 5, 8, 2, 3];.
+// Valor esperado no retorno da função: 2.
+
+const someArray4 = [2, 3, 2, 5, 8, 2, 3];
+
+function maisRepetidos(array) {
+let repeated = {};
+
+for (let index = 0; index < array.length; index += 1) {
+    if (repeated[array[index]] === undefined) {
+        repeated[array[index]] = 1;
+    } else {
+        repeated[array[index]] = repeated[array[index]] + 1;
+    }
+}
+
+let contRepetido = 0;
+let contNumero = 0;
+
+for (const key in repeated) {
+    if (contRepetido < repeated[key]) {
+        contRepetido = repeated[key];
+        contNumero = key;
+    }
+}
+return contNumero;
+}
+console.log(maisRepetidos(someArray4)); // returns 2
+
