@@ -104,3 +104,30 @@ const factorial = (number) => {
 }
 console.log(factorial(someNumber)); // results 15
 
+// 7. Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
+// Valor de teste: 'trybe' e 'be'
+// Valor esperado no retorno da função: true
+// verificaFimPalavra('trybe', 'be');
+// Retorno esperado: true
+// verificaFimPalavra('joaofernando', 'fernan');
+// Retorno esperado: false
+
+const someWord1 = 'trybe';
+const someEnding1 = 'be';
+
+const someWord2 = 'joaofernando';
+const someEnding2 = 'fernan';
+
+const endingWord = (word, ending) => {
+    let index2 = word.length - 1;
+    let equalLetters = 0;
+    for (let index = ending.length - 1; index >= 0; index -= 1) {
+        if (ending[index] === word[index2]) {
+            index2 -= 1;
+            equalLetters += 1;
+        }
+    }
+    return ending.length === equalLetters;
+}
+console.log(endingWord(someWord1, someEnding1)); // true
+console.log(endingWord(someWord2, someEnding2)); // false
