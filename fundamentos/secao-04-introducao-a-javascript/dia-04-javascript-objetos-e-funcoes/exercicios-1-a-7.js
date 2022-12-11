@@ -12,16 +12,32 @@ console.log(palindromeCheck('arara'));
 // Array de teste: [2, 3, 6, 7, 10, 1];
 // Valor esperado no retorno da função: 4.
 
-let array2 = [2, 3, 6, 7, 10, 1];
+const someArray1 = [2, 3, 6, 7, 10, 1];
 
 const biggestValueIndex = (array) => {
     let biggest = null;
-    for (let index = 0; index < array.length; index++) {
+    for (let index = 0; index < array.length; index += 1) {
         if (biggest < array[index]) {
             biggest = array[index];
         }
     }
     return array.indexOf(biggest);
 }
-console.log(biggestValueIndex(array2));
+console.log(biggestValueIndex(someArray1)); // returns 4
 
+// 3. Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+// Array de teste: [2, 4, 6, 7, 10, 0, -3];.
+// Valor esperado no retorno da função: 6.
+
+const someArray2 = [2, 4, 6, 7, 10, 0, -3];
+
+const smallestValueIndex = (array) => {
+    let smallest = null;
+    for (let index = 0; index < array.length; index += 1) {
+        if (array[index] < smallest) {
+            smallest = array[index];
+        }        
+    }
+    return array.indexOf(smallest);
+}
+console.log(smallestValueIndex(someArray2));
