@@ -15,14 +15,14 @@ console.log(palindromeCheck('arara'));
 const someArray1 = [2, 3, 6, 7, 10, 1];
 
 const biggestValueIndex = (array) => {
-    let biggest = null;
-    for (let index = 0; index < array.length; index += 1) {
-        if (biggest < array[index]) {
-            biggest = array[index];
-        }
+  let biggest = null;
+  for (let index = 0; index < array.length; index += 1) {
+    if (biggest < array[index]) {
+      biggest = array[index];
     }
-    return array.indexOf(biggest);
-}
+  }
+  return array.indexOf(biggest);
+};
 console.log(biggestValueIndex(someArray1)); // returns 4
 
 // 3. Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
@@ -32,14 +32,14 @@ console.log(biggestValueIndex(someArray1)); // returns 4
 const someArray2 = [2, 4, 6, 7, 10, 0, -3];
 
 const smallestValueIndex = (array) => {
-    let smallest = null;
-    for (let index = 0; index < array.length; index += 1) {
-        if (array[index] < smallest) {
-            smallest = array[index];
-        }        
+  let smallest = null;
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] < smallest) {
+      smallest = array[index];
     }
-    return array.indexOf(smallest);
-}
+  }
+  return array.indexOf(smallest);
+};
 console.log(smallestValueIndex(someArray2));
 
 // 4. Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
@@ -49,14 +49,14 @@ console.log(smallestValueIndex(someArray2));
 const someArray3 = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
 const biggestName = (array) => {
-    let biggest = '';
-    for (let index = 0; index < array.length; index += 1) {
-        if (array[index].length > biggest.length) {
-            biggest = array[index];
-        }
+  let biggest = '';
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index].length > biggest.length) {
+      biggest = array[index];
     }
-    return biggest;
-}
+  }
+  return biggest;
+};
 console.log(biggestName(someArray3)); // Fernanda
 
 // 5. Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
@@ -66,26 +66,26 @@ console.log(biggestName(someArray3)); // Fernanda
 const someArray4 = [2, 3, 2, 5, 8, 2, 3];
 
 function maisRepetidos(array) {
-let repeated = {};
+  let repeated = {};
 
-for (let index = 0; index < array.length; index += 1) {
+  for (let index = 0; index < array.length; index += 1) {
     if (repeated[array[index]] === undefined) {
-        repeated[array[index]] = 1;
+      repeated[array[index]] = 1;
     } else {
-        repeated[array[index]] = repeated[array[index]] + 1;
+      repeated[array[index]] = repeated[array[index]] + 1;
     }
-}
+  }
 
-let contRepetido = 0;
-let contNumero = 0;
+  let contRepetido = 0;
+  let contNumero = 0;
 
-for (const key in repeated) {
+  for (const key in repeated) {
     if (contRepetido < repeated[key]) {
-        contRepetido = repeated[key];
-        contNumero = key;
+      contRepetido = repeated[key];
+      contNumero = key;
     }
-}
-return contNumero;
+  }
+  return contNumero;
 }
 console.log(maisRepetidos(someArray4)); // returns 2
 
@@ -96,12 +96,12 @@ console.log(maisRepetidos(someArray4)); // returns 2
 const someNumber = 5;
 
 const factorial = (number) => {
-    let sum = 0;
-    for (let index = number; index >=1; index -= 1) {
-            sum = sum + index;
-    }
-    return sum;
-}
+  let sum = 0;
+  for (let index = number; index >= 1; index -= 1) {
+    sum = sum + index;
+  }
+  return sum;
+};
 console.log(factorial(someNumber)); // results 15
 
 // 7. Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
@@ -119,15 +119,15 @@ const someWord2 = 'joaofernando';
 const someEnding2 = 'fernan';
 
 const endingWord = (word, ending) => {
-    let index2 = word.length - 1;
-    let equalLetters = 0;
-    for (let index = ending.length - 1; index >= 0; index -= 1) {
-        if (ending[index] === word[index2]) {
-            index2 -= 1;
-            equalLetters += 1;
-        }
+  let index2 = word.length - 1;
+  let equalLetters = 0;
+  for (let index = ending.length - 1; index >= 0; index -= 1) {
+    if (ending[index] === word[index2]) {
+      index2 -= 1;
+      equalLetters += 1;
     }
-    return ending.length === equalLetters;
-}
+  }
+  return ending.length === equalLetters;
+};
 console.log(endingWord(someWord1, someEnding1)); // true
 console.log(endingWord(someWord2, someEnding2)); // false
