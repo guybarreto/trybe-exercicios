@@ -104,3 +104,28 @@ const basket = [
   'Abacate',
   'Uva',
 ];
+
+const fruitsObject = {};
+
+const fruitsList = (array) => {
+  for (let index = 0; index < array.length; index++) {
+    const fruit = array[index];
+    if (fruitsObject[fruit] === undefined) {
+      fruitsObject[fruit] = 1;
+    } else {
+      fruitsObject[fruit] += 1;
+    }
+  }
+  return fruitsObject;
+};
+
+console.log(fruitsList(basket)); // {Melancia: 16, Abacate: 15, Uva: 15, Laranja: 15, Jaca: 15, Pera: 11, Banana: 13}
+
+const fruitsArray = [];
+
+for (const key in fruitsObject) {
+  const amount = fruitsObject[key];
+  fruitsArray.push(`${amount} ${key}s`);
+}
+
+console.log(`Sua cesta possui: ${fruitsArray.join(', ')}.`); // Sua cesta possui: 16 Melancias, 15 Abacates, 15 Uvas, 15 Laranjas, 15 Jacas, 11 Peras, 13 Bananas.
