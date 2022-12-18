@@ -32,6 +32,7 @@ let moradores = {
 };
 
 // 1. Acesse as chaves nome, sobrenome, andar e apartamento do último morador do blocoDois e faça um console.log no seguinte formato: “O morador do bloco 2, de nome Zoey Brooks, mora no 1° andar, apartamento 101.”.
+
 let blocoDoisResidents = moradores.blocoDois;
 let lastBlocoDoisResident = blocoDoisResidents[blocoDoisResidents.length - 1];
 console.log(
@@ -39,3 +40,10 @@ console.log(
 );
 
 // 2. Utilize o for para imprimir o nome completo de todos os moradores do bloco 1, acessando suas chaves nome e sobrenome. Depois faça o mesmo para os moradores do bloco 2.
+
+for (const key in moradores) {
+  key === 'blocoUm' ? console.log('Bloco 1:') : console.log('Bloco 2:');
+  for (const element of moradores[key]) {
+    console.log(`${element.nome} ${element.sobrenome}`);
+  }
+}
