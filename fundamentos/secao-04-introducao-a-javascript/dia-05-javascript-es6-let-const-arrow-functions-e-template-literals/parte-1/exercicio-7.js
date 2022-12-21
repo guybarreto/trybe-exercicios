@@ -1,4 +1,4 @@
-// Transforme a função nomeCompleto em uma arrow function;
+// 1. Transforme a função nomeCompleto em uma arrow function;
 
 // function nomeCompleto(nome, sobrenome) {
 //   return `${nome} ${sobrenome}`;
