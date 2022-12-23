@@ -1,7 +1,7 @@
 // 1. Crie uma função que receba uma frase como parâmetro e retorne a maior palavra da frase.
 // Exemplo:
 // longestWord('Antônio foi no banheiro e não sabemos o que aconteceu') // retorna 'aconteceu'
-//      - Bônus (opcional): Tente fazer o mesmo exercício utilizando o método array.sort().
+//      * Bônus (opcional): Tente fazer o mesmo exercício utilizando o método array.sort().
 
 const longestWord = (phrase) => {
   const wordsArray = phrase.split(' ').sort();
