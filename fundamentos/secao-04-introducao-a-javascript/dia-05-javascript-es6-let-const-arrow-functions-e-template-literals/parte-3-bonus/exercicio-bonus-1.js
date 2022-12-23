@@ -1,7 +1,6 @@
 // 1. Crie duas funções JavaScript com as seguintes especificações:
 
 // Função 1: Escreva uma função que substitua a letra ‘x’ em uma frase.
-
 //      * O nome da função deverá ser substituaX;
 //      * A função deverá receber um nome por parâmetro;
 //      * Declare dentro da função uma variável do tipo const, com o nome frase, atribuindo o valor 'Tryber x aqui!';
@@ -22,3 +21,19 @@
 //          - JavaScript
 //          - HTML
 //          - CSS
+
+const substituaX = (nome) => {
+  const frase = 'Tryber x aqui!';
+  return frase.replace('x', nome);
+};
+
+const minhasSkills = (function1) => {
+  const skills = ['JavaScript', 'HTML', 'CSS'];
+  let mySkills = `${function1}
+Minhas três principais habilidades são:
+  - ${skills.join(`
+  - `)}`;
+  return mySkills;
+};
+
+console.log(minhasSkills(substituaX('Guy')));
