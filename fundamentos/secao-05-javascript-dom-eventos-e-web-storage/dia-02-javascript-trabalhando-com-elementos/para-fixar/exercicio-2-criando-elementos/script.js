@@ -13,4 +13,9 @@ const elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
 elementoOndeVoceEsta.appendChild(newElement2);
 
 // 3. Crie um filho para primeiroFilhoDoFilho.
+const newElement3 = document.createElement('section');
+newElement3.id = 'filhoDePrimeiroFilhoDoFilho';
+const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+primeiroFilhoDoFilho.appendChild(newElement3);
+
 // 4. A partir desse filho criado, acesse terceiroFilho.
