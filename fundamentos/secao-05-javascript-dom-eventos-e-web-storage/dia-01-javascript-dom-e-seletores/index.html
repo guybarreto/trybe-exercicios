@@ -67,6 +67,14 @@
           .getElementsByTagName('p')[0]
           .innerText.toUpperCase());
       firstP();
+
+      const displayAllPContent = () => {
+        const allP = document.querySelectorAll('p');
+        for (let index = 0; index < allP.length; index++) {
+          console.log(allP[index].innerHTML);
+        }
+      };
+      displayAllPContent();
     </script>
   </body>
 </html>
