@@ -19,3 +19,5 @@ const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
 primeiroFilhoDoFilho.appendChild(newElement3);
 
 // 4. A partir desse filho criado, acesse terceiroFilho.
+document.getElementById('filhoDePrimeiroFilhoDoFilho').parentElement
+  .parentElement.nextElementSibling;
