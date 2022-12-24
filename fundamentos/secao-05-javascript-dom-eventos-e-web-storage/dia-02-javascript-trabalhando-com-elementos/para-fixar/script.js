@@ -6,6 +6,9 @@ document.getElementById('elementoOndeVoceEsta').parentElement.style.color =
   'red';
 
 // 3. Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+document.getElementById('primeiroFilhoDoFilho').innerText =
+  'Primeiro filho do filho.';
+
 // 4. Acesse o primeiroFilho a partir de pai.
 // 5. Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
 // 6. Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
