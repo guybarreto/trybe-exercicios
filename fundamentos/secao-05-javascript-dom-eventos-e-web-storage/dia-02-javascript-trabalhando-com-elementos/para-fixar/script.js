@@ -13,6 +13,8 @@ document.getElementById('primeiroFilhoDoFilho').innerText =
 document.getElementById('pai').firstElementChild;
 
 // 5. Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+document.getElementById('elementoOndeVoceEsta').previousElementSibling;
+
 // 6. Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
 // 7. Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
 // 8. Agora acesse o terceiroFilho a partir de pai.
