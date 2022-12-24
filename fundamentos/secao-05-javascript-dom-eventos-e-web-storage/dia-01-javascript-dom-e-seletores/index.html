@@ -43,11 +43,15 @@
       </section>
     </main>
     <script>
-      const mainSectionSecondP = () => {
-        document.querySelectorAll('main section p')[1].innerHTML =
-          'Talented software engineer aboard a rocket.';
-      };
+      const mainSectionSecondP = () =>
+        (document.querySelectorAll('main section p')[1].innerHTML =
+          'Talented software engineer aboard a rocket.');
       mainSectionSecondP();
+
+      const mainContent = () =>
+        (document.querySelector('.main-content').style.backgroundColor =
+          'rgb(76,164,109)');
+      mainContent();
     </script>
   </body>
 </html>
