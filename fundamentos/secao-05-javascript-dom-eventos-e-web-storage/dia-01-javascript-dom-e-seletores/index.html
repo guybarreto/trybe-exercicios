@@ -61,6 +61,12 @@
       const titleFix = () =>
         (document.querySelector('.title').innerHTML = 'Desafio - JavaScript');
       titleFix();
+
+      const firstP = () =>
+        (document.getElementsByTagName('p')[0].innerText = document
+          .getElementsByTagName('p')[0]
+          .innerText.toUpperCase());
+      firstP();
     </script>
   </body>
 </html>
