@@ -71,11 +71,15 @@
       //   3. Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
       const sectionTag1 = document.createElement('section');
       sectionTag1.className = 'center-content';
-      document
-        .getElementsByClassName('main-content')[0]
-        .appendChild(sectionTag1);
+      document;
+      mainTag.appendChild(sectionTag1);
 
       //   4. Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+      const pTag1 = document.createElement('p');
+      pTag1.innerText =
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin eleifend venenatis. Donec porta quam sit amet purus gravida, quis dictum orci maximus. Pellentesque eget volutpat odio. Etiam vitae mauris turpis. Cras odio nibh, vulputate sed orci quis, interdum pellentesque massa. Duis pellentesque urna vitae nisi feugiat aliquet. Suspendisse potenti. Proin vitae varius nibh, lacinia dignissim neque. Donec tincidunt porttitor magna dignissim porttitor. Etiam gravida lectus eu sagittis scelerisque. In eget risus in tortor malesuada rutrum a sit amet odio.';
+      sectionTag1.appendChild(pTag1);
+
       //   5. Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
       //   6. Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
       //   7. Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
