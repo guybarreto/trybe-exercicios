@@ -97,6 +97,27 @@
       sectionTag2.appendChild(imgTag1);
 
       //   8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      const ulTag1 = document.createElement('ul');
+      sectionTag3.appendChild(ulTag1);
+      const numbersArray = [
+        'um',
+        'dois',
+        'três',
+        'quatro',
+        'cinco',
+        'seis',
+        'sete',
+        'oito',
+        'nove',
+        'dez',
+      ];
+      for (let index = 0; index < numbersArray.length; index += 1) {
+        const element = numbersArray[index];
+        const liTag = document.createElement('li');
+        liTag.innerText = `${element}`;
+        ulTag1.appendChild(liTag);
+      }
+
       //   9. Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
 
       //   Após criar as tags anteriores, você mostrou para a sua liderança como estava a estrutura inicial da página. Sua liderança então pediu para que você fizesse algumas alterações:
