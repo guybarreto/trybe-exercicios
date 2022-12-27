@@ -37,6 +37,12 @@ function changeTechText() {
 // 3. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // Que tal redirecionar para seu portfólio?
+const meuTop3 = document.getElementById('my-spotrybefy');
+meuTop3.addEventListener('dblclick', redirectToPortfolio);
+
+function redirectToPortfolio() {
+  window.open('https://guybarreto.github.io/', '_blank');
+}
 
 // 4. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
