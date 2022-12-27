@@ -11,21 +11,28 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 const liTags = document.getElementsByTagName('li');
 
-const addTechClass = (event) => {
-  for (let index = 0; index < liTags.length; index += 1) {
-    const li = liTags[index];
-    li.classList.remove('tech');
-  }
-  event.target.className = 'tech';
-};
-
 for (let index = 0; index < liTags.length; index += 1) {
   const li = liTags[index];
   li.addEventListener('click', addTechClass);
 }
 
+function addTechClass(event) {
+  for (let index = 0; index < liTags.length; index += 1) {
+    const li = liTags[index];
+    li.classList.remove('tech');
+  }
+  event.target.className = 'tech';
+}
+
 // 2. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
+const inputTag = document.getElementsByTagName('input')[0];
+inputTag.addEventListener('input', changeTechText);
+
+function changeTechText() {
+  const elementWithClassTech = document.getElementsByClassName('tech')[0];
+  elementWithClassTech.innerText = inputTag.value;
+}
 
 // 3. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
