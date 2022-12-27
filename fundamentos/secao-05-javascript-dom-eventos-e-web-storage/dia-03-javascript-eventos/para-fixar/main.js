@@ -5,19 +5,33 @@ const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
 // - Copie esse arquivo e edite apenas ele;
-//  - Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
+// - Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
 
-// - Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
-//  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
+// 1. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
+// Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
+const liTags = document.getElementsByTagName('li');
 
-// - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
+const addTechClass = (event) => {
+  for (let index = 0; index < liTags.length; index += 1) {
+    const li = liTags[index];
+    li.classList.remove('tech');
+  }
+  event.target.className = 'tech';
+};
+
+for (let index = 0; index < liTags.length; index += 1) {
+  const li = liTags[index];
+  li.addEventListener('click', addTechClass);
+}
+
+// 2. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
-// - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
+// 3. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
-//  - Que tal redirecionar para seu portfólio?
+// Que tal redirecionar para seu portfólio?
 
-// - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
+// 4. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
 // Segue abaixo um exemplo do uso de event.target:
