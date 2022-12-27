@@ -43,3 +43,14 @@ for (let index = 0; index < decemberDaysList.length; index += 1) {
   }
   ulDays.appendChild(newLiTag);
 }
+
+// 2.
+const createHolidaysButton = (string) => {
+  const newHolidaysButton = document.createElement('button');
+  newHolidaysButton.innerHTML = 'Feriados';
+  newHolidaysButton.id = 'btn-holiday';
+  const fatherHolidaysButton =
+    document.getElementsByClassName('buttons-container')[0];
+  fatherHolidaysButton.appendChild(newHolidaysButton);
+};
+createHolidaysButton('Feriados');
