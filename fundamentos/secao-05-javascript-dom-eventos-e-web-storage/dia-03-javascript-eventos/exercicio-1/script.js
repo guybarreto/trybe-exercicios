@@ -47,11 +47,11 @@ for (let index = 0; index < decemberDaysList.length; index += 1) {
 // 2.
 const createHolidaysButton = (string) => {
   const newHolidaysButton = document.createElement('button');
-  newHolidaysButton.innerHTML = 'Feriados';
+  newHolidaysButton.innerHTML = string;
   newHolidaysButton.id = 'btn-holiday';
-  const fatherHolidaysButton =
+  const fatherNewHolidaysButton =
     document.getElementsByClassName('buttons-container')[0];
-  fatherHolidaysButton.appendChild(newHolidaysButton);
+  fatherNewHolidaysButton.appendChild(newHolidaysButton);
 };
 createHolidaysButton('Feriados');
 
@@ -67,3 +67,14 @@ const changeDaysBackground = () => {
 };
 const holidaysButton = document.getElementById('btn-holiday');
 holidaysButton.addEventListener('click', changeDaysBackground);
+
+// 4.
+const createFridayButton = (string) => {
+  const newFridayButton = document.createElement('button');
+  newFridayButton.innerHTML = string;
+  newFridayButton.id = 'btn-friday';
+  const fatherNewFridayButton =
+    document.getElementsByClassName('buttons-container')[0];
+  fatherNewFridayButton.appendChild(newFridayButton);
+};
+createFridayButton('Sexta-feira');
