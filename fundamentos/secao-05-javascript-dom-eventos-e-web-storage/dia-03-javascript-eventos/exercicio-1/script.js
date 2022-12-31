@@ -36,10 +36,10 @@ for (let index = 0; index < decemberDaysList.length; index += 1) {
   newLiTag.className = 'day';
 
   if (day == 24 || day == 25 || day == 31) {
-    newLiTag.className += 'holiday';
+    newLiTag.className += ' holiday';
   }
   if (day == 4 || day == 11 || day == 18 || day == 25) {
-    newLiTag.className += 'friday';
+    newLiTag.className += ' friday';
   }
   ulDays.appendChild(newLiTag);
 }
@@ -54,3 +54,16 @@ const createHolidaysButton = (string) => {
   fatherHolidaysButton.appendChild(newHolidaysButton);
 };
 createHolidaysButton('Feriados');
+
+// 3.
+const changeDaysBackground = () => {
+  const holidays = document.getElementsByClassName('holiday');
+  for (let index = 0; index < holidays.length; index += 1) {
+    const day = holidays[index];
+    day.style.backgroundColor != 'white'
+      ? (day.style.backgroundColor = 'white')
+      : (day.style.backgroundColor = 'rgb(238,238,238)');
+  }
+};
+const holidaysButton = document.getElementById('btn-holiday');
+holidaysButton.addEventListener('click', changeDaysBackground);
