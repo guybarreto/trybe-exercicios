@@ -31,6 +31,7 @@ const ulDays = document.getElementById('days');
 
 for (let index = 0; index < decemberDaysList.length; index += 1) {
   const day = decemberDaysList[index];
+  const nextday = decemberDaysList[index + 1];
   const newLiTag = document.createElement('li');
   newLiTag.innerHTML = day;
   newLiTag.className = 'day';
@@ -38,7 +39,13 @@ for (let index = 0; index < decemberDaysList.length; index += 1) {
   if (day == 24 || day == 25 || day == 31) {
     newLiTag.className += ' holiday';
   }
-  if (day == 4 || day == 11 || day == 18 || day == 25) {
+  if (
+    day == 2 ||
+    day == 9 ||
+    day == 16 ||
+    day == 23 ||
+    (day == 30 && nextday != 1)
+  ) {
     newLiTag.className += ' friday';
   }
   ulDays.appendChild(newLiTag);
@@ -78,3 +85,27 @@ const createFridayButton = (string) => {
   fatherNewFridayButton.appendChild(newFridayButton);
 };
 createFridayButton('Sexta-feira');
+
+// 5.
+const fridaysTextBackup = [];
+
+const backingUpFridaysText = () => {
+  const fridays = document.getElementsByClassName('friday');
+  for (let index = 0; index < fridays.length; index += 1) {
+    const friday = fridays[index];
+    fridaysTextBackup.push(friday.innerText);
+  }
+};
+backingUpFridaysText();
+
+const changeFridaysText = () => {
+  const fridays = document.getElementsByClassName('friday');
+  for (let index = 0; index < fridays.length; index += 1) {
+    const friday = fridays[index];
+    friday.innerText != 'Sextou! o/'
+      ? (friday.innerText = 'Sextou! o/')
+      : (friday.innerText = fridaysTextBackup[index]);
+  }
+};
+const fridayButton = document.getElementById('btn-friday');
+fridayButton.addEventListener('click', changeFridaysText);
