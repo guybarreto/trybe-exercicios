@@ -155,8 +155,37 @@ taskColor('green');
 const task = document.getElementsByClassName('task')[0];
 
 const selectTask = () => {
-  task.className == 'task'
-    ? (task.className = 'task selected')
-    : (task.className = 'task');
+  if (task.className == 'task') {
+    task.className = 'task selected';
+  } else {
+    task.className = 'task';
+  }
 };
+
 task.addEventListener('click', selectTask);
+
+// extra improvement to change shadow color while mouse is on object:
+const changeShadowColor = (event) =>
+  event.type == 'mouseenter'
+    ? (task.style.boxShadow = '0 4px 8px 0 lime')
+    : (task.style.boxShadow = '0 4px 8px 0 rgba(0, 0, 0, 0.2)');
+
+task.addEventListener('mouseenter', changeShadowColor);
+task.addEventListener('mouseleave', changeShadowColor);
+
+// 10.
+const changeDayColor = (event) => {
+  for (let index = 0; index < daysArray.length; index += 1) {
+    const day = daysArray[index];
+    const selectedTaskColor =
+      document.getElementsByClassName('task selected')[0].style.backgroundColor;
+    event.target.style.color == selectedTaskColor
+      ? (event.target.style.color = 'rgb(119,119,119)')
+      : (event.target.style.color = selectedTaskColor);
+  }
+};
+
+for (let index = 0; index < daysArray.length; index += 1) {
+  const day = daysArray[index];
+  day.addEventListener('click', changeDayColor);
+}
