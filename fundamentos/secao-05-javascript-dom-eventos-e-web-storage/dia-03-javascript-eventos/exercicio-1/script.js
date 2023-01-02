@@ -125,11 +125,6 @@ const zoom = (event) => {
   }
 };
 
-const zoomOut = (event) => {
-  event.target.style.fontSize = '20px';
-  event.target.style.fontWeight = 'normal';
-};
-
 for (let index = 0; index < daysArray.length; index += 1) {
   const day = daysArray[index];
   day.addEventListener('mouseenter', zoom);
