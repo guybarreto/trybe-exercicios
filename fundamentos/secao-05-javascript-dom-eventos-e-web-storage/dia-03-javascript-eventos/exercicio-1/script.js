@@ -150,3 +150,13 @@ const taskColor = (color) => {
   fathernewDivTag.appendChild(newDivTag);
 };
 taskColor('green');
+
+// 9.
+const task = document.getElementsByClassName('task')[0];
+
+const selectTask = () => {
+  task.className == 'task'
+    ? (task.className = 'task selected')
+    : (task.className = 'task');
+};
+task.addEventListener('click', selectTask);
