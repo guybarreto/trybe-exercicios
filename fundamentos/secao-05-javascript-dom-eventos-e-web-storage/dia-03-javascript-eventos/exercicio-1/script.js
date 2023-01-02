@@ -138,10 +138,20 @@ for (let index = 0; index < daysArray.length; index += 1) {
 
 // 7.
 const divMyTasks = document.getElementsByClassName('my-tasks')[0];
-const addTask = (string) => {
+const addTask = (task) => {
   const newSpanTag = document.createElement('span');
-  newSpanTag.innerHTML = string;
+  newSpanTag.innerHTML = task;
   const fatherNewSpanTag = divMyTasks;
   fatherNewSpanTag.appendChild(newSpanTag);
 };
 addTask('Projeto:');
+
+// 8.
+const taskColor = (color) => {
+  const newDivTag = document.createElement('div');
+  newDivTag.className = 'task';
+  newDivTag.style.backgroundColor = color;
+  const fathernewDivTag = divMyTasks;
+  fathernewDivTag.appendChild(newDivTag);
+};
+taskColor('green');
