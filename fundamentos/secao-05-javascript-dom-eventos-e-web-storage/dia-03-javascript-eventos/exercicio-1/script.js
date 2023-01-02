@@ -109,3 +109,29 @@ const changeFridaysText = () => {
 };
 const fridayButton = document.getElementById('btn-friday');
 fridayButton.addEventListener('click', changeFridaysText);
+
+// 6.
+const daysArray = document.getElementsByClassName('day');
+
+const zoom = (event) => {
+  if (event.type == 'mouseenter') {
+    // mouseenter, zoom in and bold
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = 'bold';
+  } else {
+    // mouseleave, zoom out and no bold
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = 'normal';
+  }
+};
+
+const zoomOut = (event) => {
+  event.target.style.fontSize = '20px';
+  event.target.style.fontWeight = 'normal';
+};
+
+for (let index = 0; index < daysArray.length; index += 1) {
+  const day = daysArray[index];
+  day.addEventListener('mouseenter', zoom);
+  day.addEventListener('mouseleave', zoom);
+}
