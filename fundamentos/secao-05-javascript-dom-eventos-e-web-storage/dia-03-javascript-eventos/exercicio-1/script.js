@@ -135,3 +135,13 @@ for (let index = 0; index < daysArray.length; index += 1) {
   day.addEventListener('mouseenter', zoom);
   day.addEventListener('mouseleave', zoom);
 }
+
+// 7.
+const divMyTasks = document.getElementsByClassName('my-tasks')[0];
+const addTask = (string) => {
+  const newSpanTag = document.createElement('span');
+  newSpanTag.innerHTML = string;
+  const fatherNewSpanTag = divMyTasks;
+  fatherNewSpanTag.appendChild(newSpanTag);
+};
+addTask('Projeto:');
