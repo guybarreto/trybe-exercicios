@@ -189,3 +189,24 @@ for (let index = 0; index < daysArray.length; index += 1) {
   const day = daysArray[index];
   day.addEventListener('click', changeDayColor);
 }
+
+// Bônus.
+const buttonAdd = document.getElementById('btn-add');
+const input = document.getElementById('task-input');
+
+buttonAdd.addEventListener('click', addAppointment);
+input.addEventListener('keypress', addAppointment);
+
+function addAppointment(event) {
+  if (event.type === 'click' || event.keyCode === 13) {
+    if (event.type === 'click' && input.value === '') {
+      alert('Para adicionar, digite um compromisso.');
+    } else {
+      const newLiTag = document.createElement('li');
+      newLiTag.innerHTML = input.value;
+      const fatherNewLiTag = document.getElementsByClassName('task-list')[0];
+      fatherNewLiTag.appendChild(newLiTag);
+      input.value = '';
+    }
+  }
+}
