@@ -10,8 +10,18 @@ const changeBgColor = () => {
   for (let index = 0; index < bgColorsList.length; index += 1) {
     const colorBtn = bgColorsList[index];
     colorBtn.addEventListener('click', (event) => {
-      body.style.backgroundColor = `${event.target.innerHTML}`;
+      body.style.backgroundColor = event.target.innerHTML;
     });
   }
 };
 changeBgColor();
+
+const changeFontFamily = () => {
+  for (let index = 0; index < fontFamilyList.length; index++) {
+    const fontFamilyBtn = fontFamilyList[index];
+    fontFamilyBtn.addEventListener('click', (event) => {
+      body.style.fontFamily = event.target.innerHTML;
+    });
+  }
+};
+changeFontFamily();
