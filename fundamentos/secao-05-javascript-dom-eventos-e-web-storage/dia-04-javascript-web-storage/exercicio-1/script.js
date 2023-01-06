@@ -45,3 +45,13 @@ const changeFontColor = () => {
   }
 };
 changeFontColor();
+
+const changeSpacing = () => {
+  for (let index = 0; index < spacingList.length; index++) {
+    const spacingBtn = spacingList[index];
+    spacingBtn.addEventListener('click', (event) => {
+      body.style.lineHeight = event.target.innerHTML;
+    });
+  }
+};
+changeSpacing();
