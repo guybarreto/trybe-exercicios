@@ -25,3 +25,13 @@ const changeFontFamily = () => {
   }
 };
 changeFontFamily();
+
+const changeFontSize = () => {
+  for (let index = 0; index < fontSizeList.length; index++) {
+    const fontSizeBtn = fontSizeList[index];
+    fontSizeBtn.addEventListener('click', (event) => {
+      body.style.fontSize = event.target.innerHTML;
+    });
+  }
+};
+changeFontSize();
