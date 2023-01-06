@@ -11,6 +11,7 @@ const changeBgColor = () => {
     const colorBtn = bgColorsList[index];
     colorBtn.addEventListener('click', (event) => {
       body.style.backgroundColor = event.target.innerHTML;
+      localStorage.setItem('bgColor', event.target.innerHTML);
     });
   }
 };
@@ -21,6 +22,7 @@ const changeFontFamily = () => {
     const fontFamilyBtn = fontFamilyList[index];
     fontFamilyBtn.addEventListener('click', (event) => {
       body.style.fontFamily = event.target.innerHTML;
+      localStorage.setItem('fontFamily', event.target.innerHTML);
     });
   }
 };
@@ -31,6 +33,7 @@ const changeFontSize = () => {
     const fontSizeBtn = fontSizeList[index];
     fontSizeBtn.addEventListener('click', (event) => {
       body.style.fontSize = event.target.innerHTML;
+      localStorage.setItem('fontSize', event.target.innerHTML);
     });
   }
 };
@@ -41,6 +44,7 @@ const changeFontColor = () => {
     const fontColorBtn = fontColorList[index];
     fontColorBtn.addEventListener('click', (event) => {
       body.style.color = event.target.innerHTML;
+      localStorage.setItem('fontColor', event.target.innerHTML);
     });
   }
 };
@@ -51,7 +55,16 @@ const changeSpacing = () => {
     const spacingBtn = spacingList[index];
     spacingBtn.addEventListener('click', (event) => {
       body.style.lineHeight = event.target.innerHTML;
+      localStorage.setItem('spacing', event.target.innerHTML);
     });
   }
 };
 changeSpacing();
+
+window.onload = () => {
+  body.style.backgroundColor = localStorage.getItem('bgColor');
+  body.style.fontFamily = localStorage.getItem('fontFamily');
+  body.style.fontSize = localStorage.getItem('fontSize');
+  body.style.color = localStorage.getItem('fontColor');
+  body.style.lineHeight = localStorage.getItem('spacing');
+};
