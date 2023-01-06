@@ -1,0 +1,37 @@
+body {
+  margin: 10px;
+}
+
+.preferences {
+  display: flex;
+  border: solid 2px green;
+  text-align: center;
+}
+
+.settings {
+  margin: auto;
+}
+
+.settings button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80px;
+}
+#font-family button {
+  width: 140px;
+}
+#spacing button {
+  width: 180px;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.content {
+  margin: 20px;
+  text-indent: 40pt;
+}
