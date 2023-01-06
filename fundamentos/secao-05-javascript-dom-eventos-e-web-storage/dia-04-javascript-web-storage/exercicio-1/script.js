@@ -35,3 +35,13 @@ const changeFontSize = () => {
   }
 };
 changeFontSize();
+
+const changeFontColor = () => {
+  for (let index = 0; index < fontColorList.length; index++) {
+    const fontColorBtn = fontColorList[index];
+    fontColorBtn.addEventListener('click', (event) => {
+      body.style.color = event.target.innerHTML;
+    });
+  }
+};
+changeFontColor();
