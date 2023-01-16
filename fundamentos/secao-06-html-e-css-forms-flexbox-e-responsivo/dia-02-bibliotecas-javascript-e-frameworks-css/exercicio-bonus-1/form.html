@@ -12,19 +12,26 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" />
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   </head>
   <body>
     <header>
       <h1>TrybeTrip: Concorra à viagem dos seus sonhos!</h1>
     </header>
 
-    <form action="" method="get">
+    <form action="#" id="form" method="get" autocomplete="off">
       <fieldset>
-        <label for="name-input">Nome Completo:</label>
-        <input type="text" class="form-control" name="name" id="name-input" minlength="10" maxlength="40" placeholder="Digite seu nome completo" />
+        <label for="name">Nome Completo:</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Digite seu nome completo" />
 
-        <label for="email-input">E-mail:</label>
-        <input type="email" class="form-control" name="email" id="email-input" minlength="10" maxlength="50" placeholder="Digite seu e-mail" />
+        <label for="email">E-mail:</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu e-mail" />
 
         <label>Destino preferido:</label>
 
@@ -39,8 +46,9 @@
         <p id="why-p">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
         <textarea name="answer" class="form-control" id="answer" cols="62" rows="10" maxlength="500" placeholder="Digite a sua resposta"></textarea>
 
-        <label for="date-input">Qual a melhor data para realizar sua viagem?</label>
-        <input type="date" class="date form-control" name="date" id="date-input" />
+        <label for="datepicker">Qual a melhor data para realizar sua viagem?</label>
+        <!-- <input class="form-control" type="text" id="datepicker" autocomplete="off" /> -->
+        <input type="text" id="datepicker" />
 
         <label for="agree1"
           ><input type="checkbox" class="form-check-input" name="agree" id="agree1" /> Gostaria de receber outras incríveis oportunidades oferecidas
@@ -58,6 +66,7 @@
         <input type="reset" class="btn btn-danger" value="Apagar" id="resetBtn" />
       </div>
     </form>
+    <script src="moment.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
