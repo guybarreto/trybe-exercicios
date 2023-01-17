@@ -20,6 +20,20 @@
         background-color: #0fa36b;
         display: flex;
         /* ADICIONE AQUI SEUS TESTES */
+        /* elements in column: */
+        flex-direction: column; 
+        /* reverses the order of column elements */
+        flex-direction: column-reverse;
+        /* elements in line. This is already the default opt: */
+        flex-direction: row;
+        /* reverses the order of elements (still line). Line literally starts from the end: */
+        flex-direction: row-reverse;
+        /* the elements dont wrap */
+        flex-wrap: nowrap;
+        /* the elements wrap. This is already the default opt: */
+        flex-wrap: wrap;
+        /* this is a shortcut to flex-direction and flex-wrap properties */
+        flex-flow: row nowrap ;
       }
     </style>
 
@@ -34,3 +48,8 @@
     </div>
   </body>
 </html>
+
+<!-- 
+1. Teste as possibilidades (row, column, row-reverse e column-reverse) para a propriedade flex-direction.
+2. Teste as possibilidades (wrap e nowrap) para a propriedade flex-wrap.
+3. Teste as possibilidades para a propriedade flex-flow. -->
