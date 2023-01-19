@@ -116,6 +116,9 @@
     margin: 20px;
     /* Requirement 5 answer: */
     flex-basis: 350px;
+    /* Requirement 6 answer: */
+    flex-grow: 1;
+    justify-content: center;
   }
   
   .aside-container h3, h4 {
