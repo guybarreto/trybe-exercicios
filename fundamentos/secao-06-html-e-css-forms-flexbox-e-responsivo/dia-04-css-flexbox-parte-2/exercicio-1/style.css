@@ -89,6 +89,8 @@
     flex-direction: column;
     /* Requirement 7 answer: */
     flex-basis: 700px;
+    /* Requirement 8 answer: */
+    flex-grow: 10;
   }
   
   .movie-container h2 {
