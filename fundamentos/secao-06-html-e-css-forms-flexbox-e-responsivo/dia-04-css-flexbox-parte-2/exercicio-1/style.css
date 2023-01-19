@@ -87,6 +87,8 @@
   .movie-container {
     display: flex;
     flex-direction: column;
+    /* Requirement 7 answer: */
+    flex-basis: 700px;
   }
   
   .movie-container h2 {
@@ -108,6 +110,8 @@
     height: 150px;
     justify-content: center;
     margin: 10px;
+    /* Requirement 7 answer: */
+    flex-basis: 16%;
   }
   
   .aside-container {
