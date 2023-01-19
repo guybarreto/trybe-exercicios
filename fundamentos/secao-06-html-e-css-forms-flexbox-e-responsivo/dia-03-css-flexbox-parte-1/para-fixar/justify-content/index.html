@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Justify Content</title>
+    <style>
+      .box {
+        color: #9069EF;
+        background-color: rgb(243, 243, 243);
+        border: 2px solid #232525;
+        font-size: 50px;
+        height: 60px;
+        margin: 10px 5px;
+        text-align: center;
+        width: 20%;
+      }
+
+      .box-container {
+        background-color: #0fa36b;
+        display: flex;
+        /* ADICIONE AQUI SEUS TESTES */
+        /* align items in the center */
+        justify-content: center;
+        /* (default) align items to the beginning of the container */
+        justify-items: flex-start;
+        /* align items to the end of the container */
+        justify-content: flex-end;
+        /* equal spacing between elements, keeping equals margins on both left and right sides of elements. Note that elements that border will respect the each other's margin, so you'll notice more space between elements than between the element and the side margin  */
+        justify-content: space-around;
+        /* equal spacing between elements, keeping the first at the beginning and the last at the end */
+        justify-content: space-between;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </body>
+</html>
