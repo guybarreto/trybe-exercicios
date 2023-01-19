@@ -114,6 +114,8 @@
     margin: 10px;
     /* Requirement 7 answer: */
     flex-basis: 16%;
+    /* Requirement 9 answer: */
+    flex-grow: 1;
   }
   
   .aside-container {
