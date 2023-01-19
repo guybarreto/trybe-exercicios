@@ -42,6 +42,8 @@
     display: flex;
     /* Requirement 1: */
     flex-basis: 500px;
+    /* Requirement 2: */
+    order: 1;
   }
   
   .menu-container ul {
