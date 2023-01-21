@@ -33,31 +33,41 @@ Agora que temos um padrão, vamos criar um breakpoint para telas menores de lapt
  html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 body {
   font-size: 1.5em;
   margin: 60px 40px 60px 40px;
 }
+
 article {
 }
+
 h1 {
   font-size: 1.4em;
 }
+
 h2 {
   font-size: 1.2em;
 }
+
 img {
   max-width: 100%;
 }
+
 main {
 }
+
 section {
 }
+
 figure {
   margin: 0;
 }
+
 figcaption {
   font-size: .8em;
   margin-bottom: 30px;
@@ -68,5 +78,19 @@ figcaption {
     background-color: lightpink ;
     font-size: 1.3em;
     margin: 80px 60px 80px 60px;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    flex-basis: 300px;
+    flex-grow: 1;
+    margin: 0px 5px 5px 5px;
   }
 }
