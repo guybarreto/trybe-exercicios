@@ -82,6 +82,14 @@ figcaption {
     margin: 80px 60px 80px 60px;
   }
 
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
   section {
     display: flex;
     flex-wrap: wrap;
@@ -100,5 +108,18 @@ figcaption {
 @media screen and (min-width: 992px) {
   body {
     background-color: lightskyblue;
+    font-size: 1.2em;
+  }
+
+    h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  figcaption {
+    font-size: 1em;
   }
 }
