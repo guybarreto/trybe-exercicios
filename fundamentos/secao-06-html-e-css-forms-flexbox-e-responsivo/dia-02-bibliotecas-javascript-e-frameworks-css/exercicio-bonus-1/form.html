@@ -11,14 +11,8 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <link rel="stylesheet" href="style.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" />
-
-    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   </head>
   <body>
     <header>
@@ -47,7 +41,7 @@
         <textarea name="answer" class="form-control" id="answer" cols="62" rows="10" maxlength="500" placeholder="Digite a sua resposta"></textarea>
 
         <label for="datepicker">Qual a melhor data para realizar sua viagem?</label>
-        <!-- <input class="form-control" type="text" id="datepicker" autocomplete="off" /> -->
+
         <input type="text" id="datepicker" />
 
         <label for="agree1"
@@ -56,7 +50,7 @@
         >
 
         <label for="agree2"
-          ><input type="checkbox" class="form-check-input" name="agree" id="agree2" required /> Concordo que imagens das minhas férias poderão ser
+          ><input type="checkbox" class="form-check-input" name="agree" id="agree2" /> Concordo que imagens das minhas férias poderão ser
           usadas na divulgação de concursos futuros.</label
         >
       </fieldset>
@@ -66,7 +60,9 @@
         <input type="reset" class="btn btn-danger" value="Apagar" id="resetBtn" />
       </div>
     </form>
-    <script src="moment.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="/exercicio-bonus-1/assets/moment/moment.js" type="text/javascript"></script>
+    <script src="/exercicio-bonus-1/assets/pikaday/pikaday.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
