@@ -37,6 +37,7 @@ Agora que temos um padrão, vamos criar um breakpoint para telas menores de lapt
   box-sizing: inherit;
 }
 body {
+  font-size: 1.5em;
 }
 article {
 }
