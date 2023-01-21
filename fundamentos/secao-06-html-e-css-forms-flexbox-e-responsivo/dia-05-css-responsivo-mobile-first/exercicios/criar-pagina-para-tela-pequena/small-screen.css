@@ -23,12 +23,14 @@ Agora que temos um padrão, vamos criar um breakpoint para telas menores de lapt
 7. Ajuste o tamanho da fonte;
 8. Ajuste as margens da página;
 9. Faça as imagens serem mostradas em duas colunas.
-10. Agora, você vai criar outro breakpoint para telas grandes, como por exemplo, desktops. Para isso você pode consultar novamente nossa tabela com os tamanhos.
-11. Crie uma nova media query no seu arquivo CSS usando a dimensão para telas de desktop e realize os seguintes ajustes dentro do breakpoint (aqui podemos usar o tamanho de tela de 992px):
-12. Altere a cor de fundo;
-13. Ajuste o tamanho da fonte;
-14. Ajuste as margens da página;
-15. Adicione a propriedade max-width à página, para garantir que a largura das linhas não fique muito grande.
+
+Agora, você vai criar outro breakpoint para telas grandes, como por exemplo, desktops. Para isso você pode consultar novamente nossa tabela com os tamanhos.
+
+10. Crie uma nova media query no seu arquivo CSS usando a dimensão para telas de desktop e realize os seguintes ajustes dentro do breakpoint (aqui podemos usar o tamanho de tela de 992px):
+11. Altere a cor de fundo;
+12. Ajuste o tamanho da fonte;
+13. Ajuste as margens da página;
+14. Adicione a propriedade max-width à página, para garantir que a largura das linhas não fique muito grande.
  */
  html {
   box-sizing: border-box;
@@ -93,4 +95,8 @@ figcaption {
     flex-grow: 1;
     margin: 0px 5px 5px 5px;
   }
+}
+
+@media screen and (min-width: 992px) {
+
 }
