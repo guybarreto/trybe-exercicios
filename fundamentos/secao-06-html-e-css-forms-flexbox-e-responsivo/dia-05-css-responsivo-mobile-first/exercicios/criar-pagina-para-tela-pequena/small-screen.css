@@ -45,25 +45,13 @@ body {
   margin: 60px 40px 60px 40px;
 }
 
-article {
-}
-
 h1 {
   font-size: 1.4em;
 }
 
-h2 {
-  font-size: 1.2em;
-}
-
-img {
-  max-width: 100%;
-}
-
-main {
-}
-
 section {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 figure {
@@ -107,12 +95,18 @@ figcaption {
 
 @media screen and (min-width: 992px) {
   body {
+    display: flex;
+    justify-content: center;
     background-color: lightskyblue;
-    font-size: 1.2em;
-    margin: 80px 80px 80px 80px;
+    font-size: 1.4em;
   }
 
-    h1 {
+  div {
+    margin: 0px 80px 80px 80px;
+    max-width: 1220px;
+  }
+
+  h1 {
     font-size: 1.7em;
   }
 
