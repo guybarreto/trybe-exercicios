@@ -67,5 +67,6 @@ figcaption {
   body {
     background-color: lightpink ;
     font-size: 1.3em;
+    margin: 80px 60px 80px 60px;
   }
 }
