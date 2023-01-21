@@ -42,18 +42,20 @@ body {
 article {
 }
 h1 {
+  font-size: 1.4em;
 }
 h2 {
+  font-size: 1.2em;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 main {
 }
 section {
 }
 figure {
-    margin: 0;
+  margin: 0;
 }
 figcaption {
   font-size: .8em;
