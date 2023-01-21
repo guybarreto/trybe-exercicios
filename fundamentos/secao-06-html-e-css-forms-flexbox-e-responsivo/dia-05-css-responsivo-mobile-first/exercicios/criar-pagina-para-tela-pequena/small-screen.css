@@ -79,7 +79,7 @@ figcaption {
   body {
     background-color: lightpink ;
     font-size: 1.3em;
-    margin: 80px 60px 80px 60px;
+    margin: 60px 60px 60px 60px;
   }
 
   h1 {
@@ -109,6 +109,7 @@ figcaption {
   body {
     background-color: lightskyblue;
     font-size: 1.2em;
+    margin: 80px 80px 80px 80px;
   }
 
     h1 {
