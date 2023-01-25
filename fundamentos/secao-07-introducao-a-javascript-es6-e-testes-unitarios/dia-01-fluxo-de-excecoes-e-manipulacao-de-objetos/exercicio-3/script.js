@@ -54,6 +54,17 @@ objectValuesList(lesson2);
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 console.log(allLessons);
 
+// 6.
+const totalStudents = (object) => {
+    let total = 0;
+    for (const key in object) {
+        total += object[key].numeroEstudantes;
+    }
+    return total;
+}
+console.log(totalStudents(allLessons));
+
+
 /* Requisitos
 1. Crie uma função para adicionar o turno da noite na lesson2. Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
 2. Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
