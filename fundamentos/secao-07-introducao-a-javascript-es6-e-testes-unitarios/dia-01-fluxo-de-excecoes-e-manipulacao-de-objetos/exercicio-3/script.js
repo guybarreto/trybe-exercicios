@@ -64,6 +64,12 @@ const totalStudents = (object) => {
 }
 console.log(totalStudents(allLessons));
 
+// 7.
+const getValueByNumber = (object, number) => {
+    const valuesArray = Object.values(object);
+    return valuesArray[number];
+}
+console.log(getValueByNumber(lesson1, 0)); // Matemática
 
 /* Requisitos
 1. Crie uma função para adicionar o turno da noite na lesson2. Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
