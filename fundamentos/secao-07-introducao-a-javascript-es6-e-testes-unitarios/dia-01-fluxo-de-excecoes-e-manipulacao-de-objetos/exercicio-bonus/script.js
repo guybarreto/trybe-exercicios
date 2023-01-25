@@ -39,3 +39,19 @@ const mathStudents = (object) => {
 console.log(mathStudents(allLessons)); // 30
 
 // 2.
+const createReport = (object, teacher) => {
+    const report = {
+        professor: '',
+        aulas: [],
+        estudantes: 0,
+    };
+    for (const lesson in object) {
+        if (object[lesson].professor === teacher) {
+            report.professor = teacher;
+            report.aulas.push(object[lesson].materia);
+            report.estudantes += object[lesson].numeroEstudantes;
+        }
+    }
+    return report;
+}
+console.log(createReport(allLessons, 'Maria Clara'));
