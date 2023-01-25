@@ -18,15 +18,23 @@ const lesson3 = {
   turno: 'noite',
 };
 
+// 1.
 const addNightShift = (object, key, value) => {
     object[key] = value;
 }
 addNightShift(lesson2, 'turno', 'noite');
 
+// 2.
 const objectKeysList = (object) => {
     console.log(Object.keys(object));
 }
 objectKeysList(lesson2);
+
+// 3.
+const objectLength = (object) => {
+    console.log(Object.entries(object).length);
+}
+objectLength(lesson2);
 
 /* Requisitos
 1. Crie uma função para adicionar o turno da noite na lesson2. Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
