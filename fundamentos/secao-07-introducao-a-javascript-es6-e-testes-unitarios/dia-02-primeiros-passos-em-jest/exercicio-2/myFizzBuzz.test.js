@@ -10,12 +10,15 @@ const myFizzBuzz = require('./myFizzBuzz');
 
 describe('myFizzBuzz function', () => {
     test('myFizzBuzz(15) returns fizzbuzz', () => {
-        expect(myFizzBuzz(15)).toBe('fizzbuzz')
+        expect(myFizzBuzz(15)).toBe('fizzbuzz');
     });
     test('myFizzBuzz(3) returns fizz', () => {
-        expect(myFizzBuzz(3)).toBe('fizz')
+        expect(myFizzBuzz(3)).toBe('fizz');
     });
     test('myFizzBuzz(5) returns buzz', () => {
-        expect(myFizzBuzz(5)).toBe('buzz')
+        expect(myFizzBuzz(5)).toBe('buzz');
+    })
+    test('myFizzBuzz(7) returns 7', () => {
+        expect(myFizzBuzz(7)).toBe(7);
     })
 });
