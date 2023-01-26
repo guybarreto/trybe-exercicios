@@ -15,4 +15,7 @@ describe('myFizzBuzz function', () => {
     test('myFizzBuzz(3) returns fizz', () => {
         expect(myFizzBuzz(3)).toBe('fizz')
     });
+    test('myFizzBuzz(5) returns buzz', () => {
+        expect(myFizzBuzz(5)).toBe('buzz')
+    })
 });
