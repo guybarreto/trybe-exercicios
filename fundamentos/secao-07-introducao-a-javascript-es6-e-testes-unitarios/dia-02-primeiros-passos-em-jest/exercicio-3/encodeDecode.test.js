@@ -6,3 +6,13 @@ Para as funções encode e decode, crie os seguintes testes em Jest:
     4. Teste se as demais letras/números não são convertidos para cada caso;
     5. Teste se a string que é retornada pelas funções tem o mesmo número de caracteres que a string passada como parâmetro.
 */
+const {encode, decode} = require('./encodeDecode');
+
+describe('encodeDecode function', () => {
+    test('encode is a function', () => {
+        expect(encode).toBeDefined();
+    });
+    test('decode is a function', () => {
+        expect(decode).toBeDefined();
+    });
+});
