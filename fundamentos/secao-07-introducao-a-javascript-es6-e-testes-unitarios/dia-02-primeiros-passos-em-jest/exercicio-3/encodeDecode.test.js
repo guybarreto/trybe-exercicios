@@ -11,12 +11,18 @@ const {encode, decode} = require('./encodeDecode');
 describe('encodeDecode function', () => {
     const consonants = 'b, c, d, f, g, h, j, k, l, m, n, p, q, r, s, t, v, x, y, w, z';
     const numbers = '0, 1, 2, 3, 4, 5, 6, 7, 8, 9';
-    test('encode is a function', () => {
+    test('encode is defined', () => {
         expect(encode).toBeDefined();
     });
-    test('decode is a function', () => {
+    test('encode is a function', () => {
+        expect(typeof(encode)).toBe('function');
+    })
+    test('decode defined', () => {
         expect(decode).toBeDefined();
     });
+    test('decode is a function', () => {
+        expect(typeof(decode)).toBe('function');
+    })
     test('a, e, i, o, u vowels are converted to 1, 2, 3, 4, 5 numbers', () => {
         expect(encode('aeiou')).toBe('12345');
     })
