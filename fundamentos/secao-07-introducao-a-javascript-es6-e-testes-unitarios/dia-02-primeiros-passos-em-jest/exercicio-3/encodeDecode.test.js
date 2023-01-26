@@ -15,4 +15,7 @@ describe('encodeDecode function', () => {
     test('decode is a function', () => {
         expect(decode).toBeDefined();
     });
+    test('a, e, i, o, u vowels are converted to 1, 2, 3, 4, 5', () => {
+        expect(encode('aeiou')).toBe('12345');
+    })
 });
