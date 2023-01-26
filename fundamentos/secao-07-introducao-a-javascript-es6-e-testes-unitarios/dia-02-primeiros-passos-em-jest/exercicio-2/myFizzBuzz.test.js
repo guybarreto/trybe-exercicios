@@ -17,8 +17,11 @@ describe('myFizzBuzz function', () => {
     });
     test('myFizzBuzz(5) returns buzz', () => {
         expect(myFizzBuzz(5)).toBe('buzz');
-    })
+    });
     test('myFizzBuzz(7) returns 7', () => {
         expect(myFizzBuzz(7)).toBe(7);
+    });
+    test('myFizzBuzz("m") returns false', () => {
+        expect(myFizzBuzz("m")).toBe(false);
     })
 });
