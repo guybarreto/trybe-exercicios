@@ -35,4 +35,10 @@ describe('encodeDecode function', () => {
     test('6 to 9 are not decoded', () => {
         expect(decode('6789')).toBe('6789');
     })
+    test('encoded string have same length as the parameter string', () => {
+        expect(encode('testing').length).toBe(7);
+    })
+    test('decoded string have same length as the parameter string', () => {
+        expect(decode('t2st3ng').length).toBe(7);
+    })
 });
