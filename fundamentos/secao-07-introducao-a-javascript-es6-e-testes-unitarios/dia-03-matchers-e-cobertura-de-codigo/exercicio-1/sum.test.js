@@ -7,4 +7,7 @@ describe('A função sum', () => {
     test('O retorno de sum(0, 0) é 0', () => {
         expect(sum(0, 0)).toBe(0);
     });
+    test('Lança um erro quando os parâmetros são number 4 e string "5"', () => {
+        expect(() => sum(4, '5')).toThrow();
+    })
 })
