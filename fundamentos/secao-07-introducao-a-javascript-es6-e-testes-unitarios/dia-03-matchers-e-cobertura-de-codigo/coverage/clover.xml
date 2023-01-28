@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1674879106179" clover="3.2.0">
-  <project timestamp="1674879106179" name="All files">
+<coverage generated="1674879189465" clover="3.2.0">
+  <project timestamp="1674879189465" name="All files">
     <metrics statements="9" coveredstatements="6" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1" elements="16" coveredelements="10" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
     <file name="createItem.js" path="/Users/guybarreto/trybe/trybe-exercicios/fundamentos/secao-07-introducao-a-javascript-es6-e-testes-unitarios/dia-03-matchers-e-cobertura-de-codigo/fixacao-testes/createItem.js">
       <metrics statements="9" coveredstatements="6" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
