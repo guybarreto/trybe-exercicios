@@ -12,3 +12,4 @@ let info = {
   console.log(printMessage(info));
   
   module.exports = { info, printMessage };
+  
