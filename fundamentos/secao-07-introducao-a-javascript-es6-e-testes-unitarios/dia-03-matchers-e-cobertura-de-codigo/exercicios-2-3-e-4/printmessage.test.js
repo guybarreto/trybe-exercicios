@@ -10,4 +10,7 @@ describe('Função printMessage', () => {
     test('A resposta contém o nome correto da personagem', () => {
         expect(printMessage(info)).toMatch(info.personagem);
     })
+    test('A mensagem de erro é lançada quando a função é chamada com um objeto inválido', () => {
+        expect(() => printMessage('Nao Sou Objeto')).toThrow('objeto inválido');
+    })
 })
