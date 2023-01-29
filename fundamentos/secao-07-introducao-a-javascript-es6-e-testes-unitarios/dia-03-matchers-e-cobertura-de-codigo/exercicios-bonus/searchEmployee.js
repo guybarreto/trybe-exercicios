@@ -38,9 +38,6 @@ const professionalBoard = [
     },
   ];
   
-  // Pesquisa
-  const searchEmployee = (id, detail) => {
-    // Implemente seu código aqui
-  };
+  const searchEmployee = (id, detail) => professionalBoard.find((professional) => professional.id === id)[detail];
 
   module.exports = {searchEmployee, professionalBoard};
