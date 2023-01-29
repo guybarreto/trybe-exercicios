@@ -13,4 +13,7 @@ describe('Função searchEmployee', () => {
     test('Caso o id não conste no quadro de funcionários, a função deve retornar o erro "ID não identificada"', () => {
         expect(() => searchEmployee('123456', 'lastName')).toThrow('ID não identificada');
     })
+    test('Se a informação/detalhe que se quer acessar não existir, a função deve retornar o erro "Informação indisponível"', () => {
+        expect(() => searchEmployee('5569-4', 'nonExistentInfo')).toThrow('Informação indisponível');
+    })
 })

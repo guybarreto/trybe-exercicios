@@ -44,6 +44,9 @@ const professionalBoard = [
     if (professionalObj === undefined) {
       throw new Error('ID não identificada');
     }
+    if (professionalObj[detail] === undefined) {
+      throw new Error('Informação indisponível');
+    }
     return professionalObj[detail];
   }
 
