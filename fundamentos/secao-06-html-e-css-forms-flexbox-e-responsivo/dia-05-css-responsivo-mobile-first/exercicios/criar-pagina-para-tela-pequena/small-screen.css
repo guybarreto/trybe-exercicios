@@ -86,7 +86,6 @@ figcaption {
   figure {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
     flex-basis: 300px;
     flex-grow: 1;
     margin: 0px 5px 5px 5px;
