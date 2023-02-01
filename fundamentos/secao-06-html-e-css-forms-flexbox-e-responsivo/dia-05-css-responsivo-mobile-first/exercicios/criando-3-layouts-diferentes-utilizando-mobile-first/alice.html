@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alice's Adventures in Wonderland</title>
   <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="alice.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <p>Alice's Adventures in Wonderland</p>
+  <header>
+    <div class="coloredBarExtension">
       <nav>
         <ul>
           <li>Home</li>
@@ -18,7 +18,10 @@
           <li>Contact</li>
         </ul>
       </nav>
-    </header>
+    </div>
+    <h1>Alice's Adventures in Wonderland</h1>
+  </header>
+  <div class="container">  
     <aside class="aside-one">
       <h2>Chapters</h2>
       <ul>
@@ -47,9 +50,9 @@
       </ul>
     </aside>
     <article class="main-content">
-      <h1>
+      <h2>
         CHAPTER I. Down the Rabbit-Hole
-      </h1>
+      </h2>
       <p>
         Alice was beginning to get very tired of sitting by her sister on the
         bank, and of having nothing to do: once or twice she had peeped into the
@@ -208,6 +211,8 @@
         toast,) she very soon finished it off.
       </p>
     </article>
+  </div>
+  <div class="coloredBarExtension">
     <footer>
       <h3>Copyright</h3>
       <p>Project Gutenberg's Alice's Adventures in Wonderland, by Lewis Carroll</p>
@@ -217,6 +222,6 @@
         with this eBook or online at www.gutenberg.org
       </p>
     </footer>
-  </div>
+</div>
 </body>
 </html>
