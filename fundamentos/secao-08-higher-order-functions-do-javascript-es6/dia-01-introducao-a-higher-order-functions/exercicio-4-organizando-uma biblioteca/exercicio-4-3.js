@@ -1,14 +1,22 @@
+const books = require('./library-database');
+
 const expectedResult = {
-    author: {
-      birthYear: 1948,
-      name: 'George R. R. Martin',
-    },
-    genre: 'Fantasia',
     id: 1,
     name: 'As Crônicas de Gelo e Fogo',
-    releaseYear: 1991,
+    genre: 'Fantasia',
+    author: { name: 'George R. R. Martin', birthYear: 1948 },
+    releaseYear: 1991
   };
   
-  const getNamedBook = () => {
-    // escreva seu código aqui
-  }
+  const getNamedBook = (booksArray) => booksArray.find((book) => book.name.length === 26);
+
+  console.log(getNamedBook(books));
+/* Output:
+{
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  genre: 'Fantasia',
+  author: { name: 'George R. R. Martin', birthYear: 1948 },
+  releaseYear: 1991
+}
+*/
