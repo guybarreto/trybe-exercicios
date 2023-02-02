@@ -1,8 +1,12 @@
-const expectedResult = 'Duna';
-const smallerName = () => {
-  let nameBook;
-  // escreva aqui o seu código
+const books = require('./library-database');
 
-  // Variável nameBook que receberá o valor do menor nome;
+const expectedResult = 'Duna';
+const smallerName = (booksArray) => {
+  let nameBook;
+  books.forEach(book => {
+    if (nameBook === undefined) nameBook = book.name; 
+    if (book.name.length < nameBook.length) nameBook = book.name;
+  });
   return nameBook;
 }
+console.log(smallerName(books)); // Duna
