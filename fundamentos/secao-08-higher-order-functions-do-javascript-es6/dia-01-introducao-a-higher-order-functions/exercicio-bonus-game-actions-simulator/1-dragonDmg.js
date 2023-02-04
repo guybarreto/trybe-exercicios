@@ -6,3 +6,5 @@ const dragonDmg = () => {
     const dmg = Math.round(Math.random() * (maxDmg - minDmg + 1) + minDmg); // +1 to make the maxDmg inclusive
     return dmg;
 }
+
+module.exports = dragonDmg;

@@ -1,8 +1,9 @@
+const { mage } = require('./stats-database');
 const battleMembers = require('./stats-database');
 
 const castSpell = (mana, manaCost, dmg) => {
     mana -= manaCost;
-    return `Mana spent: ${manaCost}\nDamage dealt: ${dmg}`;
+    return { manaSpent: manaCost, damageDealt: dmg};
 }
 
 const mageDmg = () => {
@@ -12,7 +13,7 @@ const mageDmg = () => {
     const manaCost = 15;
     const mana = battleMembers.mage.mana;
 
-    return mana >= 15 ? castSpell(mana, manaCost, dmg) : `Mana spent: 0\nDamage dealt: Not enough mana`;
+    return mana >= 15 ? castSpell(mana, manaCost, dmg) : { manaSpent: 0, damageDealt: 'Not enough mana...'};
 }
 
-console.log(mageDmg());
+module.exports = mageDmg;

@@ -6,3 +6,5 @@ const warriorDmg = () => {
     const dmg = Math.floor(Math.random() * (maxDmg - minDmg + 1) + minDmg); // +1 to make the maxDmg inclusive
     return dmg;
 }
+
+module.exports = warriorDmg;
