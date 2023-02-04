@@ -19,3 +19,5 @@ const dragon = {
 };
   
 const battleMembers = { mage, warrior, dragon };
+
+module.exports = battleMembers;
