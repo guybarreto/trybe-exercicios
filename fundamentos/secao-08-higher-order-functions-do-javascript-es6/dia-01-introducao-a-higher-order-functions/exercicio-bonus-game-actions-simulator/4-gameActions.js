@@ -4,17 +4,17 @@ const { mageDmg, castSpell } = require('./3-mageDmg');
 const battleMembers = require('./stats-database');
 
 const gameActions = {
-    warriorTurn: (warriorDamage) => {
-        battleMembers.warrior.damage = warriorDamage();
-        battleMembers.dragon.healthPoints -= warriorDamage();
+    warriorTurn: (warriorAtk) => {
+        battleMembers.warrior.damage = warriorAtk();
+        battleMembers.dragon.healthPoints -= warriorAtk();
     },
-    mageTurn: (mageDamage) => {
-        battleMembers.mage.damage = mageDamage();
-        battleMembers.dragon.healthPoints -= mageDamage();
+    mageTurn: (mageAtk) => {
+        battleMembers.mage.damage = mageAtk();
+        battleMembers.dragon.healthPoints -= mageAtk();
     },
-    dragonTurn: (dragonDamage) => {
-        battleMembers.dragon.damage = dragonDamage();
-        battleMembers.mage.healthPoints -= dragonDamage();
-        battleMembers.warrior.healthPoints -= dragonDamage();
+    dragonTurn: (dragonAtk) => {
+        battleMembers.dragon.damage = dragonAtk();
+        battleMembers.mage.healthPoints -= dragonAtk();
+        battleMembers.warrior.healthPoints -= dragonAtk();
     }
 };
