@@ -6,10 +6,7 @@ const expectedResult = ['Fundação', 'Duna'];
 const booksByAuthorBirthYear = (birthYear) =>
   books
     .filter((book) => book.author.birthYear === birthYear)
-    .reduce((acc, book) => {
-      acc.push(book.name);
-      return acc;
-    }, []);
+    .map((book) => book.name);
 
 const result = booksByAuthorBirthYear(1920);
 
